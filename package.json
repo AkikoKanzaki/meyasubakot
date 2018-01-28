@@ -20,7 +20,7 @@
   },
   "devDependencies": {},
    "scripts": {
-    "start": "HUBOT_SLACK_TOKEN=xoxb-306869195351-lfD6bAaeCf4Pp63guJbE21r6 bash ./bin/hubot --adapter slack"  
+    "start": "bash ./bin/hubot --adapter slack"  
   },
   "repository": {
     "type": "git",
