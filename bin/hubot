@@ -3,10 +3,15 @@
 set -e
 
 npm install
+
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 
-npm install -g hubot-slack
+echo PATH
 
-export HUBOT_SLACK_TOKEN=xoxb-306869195351-lfD6bAaeCf4Pp63guJbE21r6 bash 
+npm i coffee-script -S
+
+npm install hubot-slack
+
+export HUBOT_SLACK_TOKEN="xoxb-306869195351-lfD6bAaeCf4Pp63guJbE21r6"
 
 exec node_modules/.bin/hubot --name "meyasubakot" "$@"

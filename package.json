@@ -19,8 +19,8 @@
     "hubot-shipit": "^0.2.1"
   },
   "devDependencies": {},
-   "scripts": {
-    "start": "bash ./bin/hubot --adapter slack"  
+  "scripts": {
+    "start": "bash ./bin/hubot"
   },
   "repository": {
     "type": "git",
