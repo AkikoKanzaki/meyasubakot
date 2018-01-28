@@ -6,6 +6,6 @@ npm cache clean
 
 npm install
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
-export HUBOT_SLACK_TOKEN="xoxb-306869195351-lfD6bAaeCf4Pp63guJbE21r6"
+HUBOT_SLACK_TOKEN=xoxb-305810348452-2UjKYbXVJwLO7xWBnx18OK8B
 
 exec node_modules/.bin/hubot --name "meyasubakot" "$@"
