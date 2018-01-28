@@ -6,6 +6,8 @@
     "start": "HUBOT_SLACK_TOKEN=xoxb-305810348452-1txuE4RSa4jkRBBIu0bEtUXC bash bin/hubot --adapter slack"
   },
   "dependencies": {
+    "yo": "2.0.1",
+    "generator-hubot": "1.0.0",
     "coffee-script": "^1.12.7",
     "cron": "^1.0.5",
     "hubot": "2.19.0",
