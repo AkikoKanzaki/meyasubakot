@@ -19,7 +19,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "HUBOT_SLACK_TOKEN=xoxb-306869195351-lfD6bAaeCf4Pp63guJbE21r6 ./bin/hubot --adapter slack"  
+  },
+
+    
   },
   "repository": {
     "type": "git",
