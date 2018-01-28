@@ -18,23 +18,8 @@
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.1",
     "hubot-slack": "^4.4.0"
-  }, "hubot-shipit": "^0.2.1",
-    "hubot-slack": "^4.4.0"
- HUBOT_SLACK_TOKEN=xoxb-306869195351-lfD6bAaeCf4Pp63guJbE21r6 bash bin/hubot --adapter slackencies": {},
-  "scripts": {
-    "start": "bash ./bin/hubot"
+  }, "hubot-shipit": "^0.2.1",   "scripts": {
+    "start": "bash bin/hubot --adapter slack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AkikoKanzaki/meyasubakot.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AkikoKanzaki/meyasubakot/issues"
-  },
-  "homepag
-  "engines": {
-    "node": "0.10.x"
-  }e": "https://github.com/AkikoKanzaki/meyasubakot#readme"
+} "https://github.com/AkikoKanzaki/meyasubakot#readme"
 }
