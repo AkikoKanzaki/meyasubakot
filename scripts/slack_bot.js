@@ -1,15 +1,17 @@
- 
-  controller.on('direct_message',function(bot,message) {
-  bot.reply(message,"“½–¼‚Å“Še‚µ‚Ü‚µ‚½:mailbox_with_mail:");
+// controller.on('direct_message',function(bot,message) {
+//  bot.reply(message,"ãƒ†ã‚¹ãƒˆã ã‚ˆ:mailbox_with_mail:");
   
-    // “Šeæ‚ªƒ†[ƒU[‚Ìê‡
-      bot.startPrivateConversation({user: "U81U6MKNG"}, function(response, convo){
-    convo.say(message);
-      })
-      
-    // “Šeæ‚ªƒ`ƒƒƒ“ƒlƒ‹‚Ìê‡
-  bot.startConversation({channel: "\u7df4\u7fd2\u5834"}, function(response, convo){
+    // userID
+//     controller.on('direct_message',function(bot,message) {
+  bot.reply(message,"ãƒ†ã‚¹//ãƒˆã ã‚ˆ:mailbox_with_mail:");//
+  
+    // userID
+      bot.st//artPrivateConversation({user: "U81U6MKNG"}, function(response, convo){
+    //convo.say(message);
+    //  })
+//       
+    // Channel
+  bot.startConversation({channel: "C830BQZ63"}, function(response, convo){
     convo.say(message);
   })
 });
-  
