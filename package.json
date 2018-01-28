@@ -18,8 +18,12 @@
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.1",
     "hubot-slack": "^4.4.0"
-  }, "hubot-shipit": "^0.2.1",   "scripts": {
+  },   "scripts": {
     "start": "bash bin/hubot --adapter slack"
   },
+    "engines": {
+    "node": "7.2.1",
+    "npm": "4.0.5"
+  }
 } "https://github.com/AkikoKanzaki/meyasubakot#readme"
 }

@@ -2,6 +2,8 @@
 
 set -e
 
+npm cache clean
+
 npm install
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 export HUBOT_SLACK_TOKEN="xoxb-306869195351-lfD6bAaeCf4Pp63guJbE21r6"
