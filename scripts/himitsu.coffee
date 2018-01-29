@@ -13,6 +13,15 @@ config =
 
 module.exports = (robot) ->
 
+  robot.respond /( [\S\s]*?)/i, (msg) ->
+    from = msg.message.user.name
+    text = msg.message
+    to = config.to
+    #  msg.send "#{text}！"
+    robot.send {room: to}, "#{text}"
+    msg.send "@#{from} #{to}目安箱に「#{text}」と投函しました"
+    return
+
 #  robot.respond /(.+)/i, (msg) ->
 #    from = msg.message.user.name
 #    args = msg.match[1].trim().split(/\s+/)
@@ -24,12 +33,3 @@ module.exports = (robot) ->
 #    robot.send {room: to}, text
 #    msg.send "@#{from} #{to}目安箱に「#{text}」と投函しました"
 #    return
-
-  robot.respond /( [\S\s]*?)/i, (msg) ->
-    from = msg.message.user.name
-    text = msg.message
-      to = config.to
-#    msg.send "#{text}！"
-#    robot.send {room: to}, "#{text}"
-    msg.send "@#{from} #{to}目安箱に「#{text}」と投函しました"
-    return
