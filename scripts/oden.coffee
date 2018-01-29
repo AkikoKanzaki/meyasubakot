@@ -4,4 +4,4 @@ module.exports = (robot) ->
     msg.send "スシが食べたい。"
     
   robot.hear /(寝てない|睡眠不足)/i, (msg) ->
-    msg.send "こんな感じかな？http://livedoor.blogimg.jp/jigokuno_misawa/imgs/4/0/403d15ec.gif"
+    msg.send "http://livedoor.blogimg.jp/jigokuno_misawa/imgs/4/0/403d15ec.gif"
