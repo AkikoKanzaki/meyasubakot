@@ -14,9 +14,8 @@ config =
 module.exports = (robot) ->
 
   robot.respond /([\s\S]*?)/i, (msg) ->
-    echo msg
     from = msg.message.user.name
-    args = msg.match[1].trim().split(/\s+/)
+    args = msg.match[1].trim()
     if /[#@][a-zA-Z0-9_\-]+/.test args[0]
       to = args.shift()
     else
