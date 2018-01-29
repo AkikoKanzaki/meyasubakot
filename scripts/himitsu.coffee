@@ -9,11 +9,11 @@
 #   @shokai
 
 config =
-  to: '@akiko_kanzaki'
+  to: '#naisho'
 
 module.exports = (robot) ->
 
-  robot.respond /*/i, (msg) ->
+  robot.respond /(.+)$/i, (msg) ->
     from = msg.message.user.name
     args = msg.match[1].trim().split(/\s+/)
     if /[#@][a-zA-Z0-9_\-]+/.test args[0]
@@ -22,10 +22,10 @@ module.exports = (robot) ->
       to = config.to
     text = args.join(' ')
     robot.send {room: to}, text
-    msg.send "@#{from} #{to}さんにこっそり「#{text}」って言っておきました"
+    msg.send "@#{from} #{to}にこっそり「#{text}」って言っておきました"
     return
 
-  robot.respond /*/i, (msg) ->
+  robot.respond /.$/i, (msg) ->
     msg.send """
     hubot anon MESSAGE
     hubot anon [to] MESSAGE
