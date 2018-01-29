@@ -17,6 +17,13 @@ module.exports = (robot) ->
     from = msg.message.user.name
     text = msg.message
     to = config.to
+    #args = msg.match[1].trim()
+    #if /[#@][a-zA-Z0-9_\-]+/.test args[0]
+    #    to = args.shift()
+  　#else
+  　#    to = config.to
+  　#text = args.join(' ')
+    
     #  msg.send "#{text}！"
     robot.send {room: to}, "#{text}"
     msg.send "@#{from} #{to}目安箱に「#{text}」と投函しました"
