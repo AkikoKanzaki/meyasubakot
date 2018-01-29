@@ -21,8 +21,8 @@ module.exports = (robot) ->
     else
       to = config.to
     text = args.join(' ')
-    robot.send {room: to}, text
-    msg.send "@#{from} #{to}にこっそり「#{text}」って言っておきました"
+    robot.send {room: to}, "意見をいただきました。「#{text}」"
+    msg.send "@#{from} さん#{to}に「#{text}」というご意見を投稿しました。"
     return
 
   robot.respond /.$/i, (msg) ->
