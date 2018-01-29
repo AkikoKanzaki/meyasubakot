@@ -13,7 +13,7 @@ config =
 
 module.exports = (robot) ->
 
-  robot.respond /(.+\\s.+)/i, (msg) ->
+  robot.respond /([\s\S]*?)/i, (msg) ->
     from = msg.message.user.name
     args = msg.match[1].trim().split(/\s+/)
     if /[#@][a-zA-Z0-9_\-]+/.test args[0]
@@ -24,11 +24,4 @@ module.exports = (robot) ->
     robot.send {room: to}, "意見をいただきました。「#{text}」"
     msg.send "@#{from} さん#{to}に「#{text}」というご意見を投稿しました。"
     return
-
-  robot.respond /.$/i, (msg) ->
-    msg.send """
-    hubot anon MESSAGE
-    hubot anon [to] MESSAGE
-    hubot anon #general MESSAGE
-    """
-    return
+  
