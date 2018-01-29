@@ -23,10 +23,10 @@ module.exports = (robot) ->
   　#else
   　#    to = config.to
   　#text = args.join(' ')
-    text2 = text.substr(11)
+    #text2 = text.substr(11)
     #  msg.send "#{text}！"
-    robot.send {room: to}, "#{text2}"
-    msg.send "@#{from} #{to}目安箱に「#{text2}」と投函しました"
+    robot.send {room: to}, "#{text}"
+    msg.send "@#{from} #{to}目安箱に「#{text}」と投函しました"
     return
 
 #  robot.respond /(.+)/i, (msg) ->
