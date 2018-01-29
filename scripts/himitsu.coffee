@@ -9,7 +9,7 @@
 #   @shokai
 
 config =
-  to: '@akiko_kanzaki'
+  to: '#naisho'
 
 module.exports = (robot) ->
 
@@ -22,13 +22,12 @@ module.exports = (robot) ->
       to = config.to
     text = args.join(' ')
     robot.send {room: to}, text
-    msg.send "@#{from} #{to}さんにこっそり「#{text}」って言っておきました"
+    msg.send "@#{from} 目安箱に「#{text}」と投函しておきました。"
     return
 
   robot.respond /anon$/i, (msg) ->
     msg.send """
-    hubot anon MESSAGE
-    hubot anon [to] MESSAGE
-    hubot anon #general MESSAGE
+    hubot MESSAGE
+    hubot [to] MESSAGE
     """
     return
