@@ -26,7 +26,8 @@ module.exports = (robot) ->
 #    msg.send "@#{from} #{to}目安箱に「#{text}」と投函しました"
 #    return
 
-  robot.respond /(^ [\S\s]*?)/i, (msg) ->
+  robot.respond /( [\S\s]*?)/i, (msg) ->
+    from = msg.message.user.name
     text = msg.message
-    msg.send """こんにちは！ """
+    msg.send "#{text}！"
     return
