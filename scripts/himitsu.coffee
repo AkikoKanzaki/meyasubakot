@@ -14,14 +14,16 @@ config =
 module.exports = (robot) ->
 
   robot.respond /([\s\S]*?)/i, (msg) ->
+    echo msg
     from = msg.message.user.name
     args = msg.match[1].trim().split(/\s+/)
     if /[#@][a-zA-Z0-9_\-]+/.test args[0]
       to = args.shift()
     else
       to = config.to
-    text = """args.join(' \s')"""
-    robot.send {room: to}, "意見をいただきました。「#{text}」"
+    text = args.join(' ')
+    robot.send {room: to}, """意見をいただきました。「#{text}」"""
     msg.send "@#{from} さん#{to}に「#{text}」というご意見を投稿しました。"
+    robot.send msg
     return
   
