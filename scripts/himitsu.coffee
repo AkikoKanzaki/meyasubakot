@@ -20,7 +20,7 @@ module.exports = (robot) ->
       to = args.shift()
     else
       to = config.to
-    text = args.join(' \s')
+    text = """args.join(' \s')"""
     robot.send {room: to}, "意見をいただきました。「#{text}」"
     msg.send "@#{from} さん#{to}に「#{text}」というご意見を投稿しました。"
     return
