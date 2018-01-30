@@ -17,16 +17,10 @@ module.exports = (robot) ->
     from = msg.message.user.name
     text = msg.message
     to = config.to
-    #args = msg.match[1].trim()
-    #if /[#@][a-zA-Z0-9_\-]+/.test args[0]
-    #    to = args.shift()
-  　#else
-  　#    to = config.to
-  　#text = args.join(' ')
-    #text2 = text.substr(11)
-    #  msg.send "#{text}！"
-    robot.send {room: to}, "#{text}"
-    msg.send "@#{from} #{to}目安箱に「#{text}」と投函しました"
+    stg = msg.message.text
+    atext = stg.slice(11)
+    robot.send {room: to}, "★投稿がありました\n ----------message-----------\n #{atext}"
+    msg.send "@#{from} #{to}目安箱に\n「#{atext}」と投函しました"
     return
 
 #  robot.respond /(.+)/i, (msg) ->

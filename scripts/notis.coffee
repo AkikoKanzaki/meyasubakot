@@ -9,5 +9,5 @@ module.exports = (robot) ->
       timeZone: "Asia/Tokyo"        # タイムゾーン
       onTick: ->                    # 実行処理
         now = new time.Date()
-        robot.send {room: "#naisho"}, "UTCで"+now.getHours()+"時をお知らせします。"
+        robot.send {room: "#naisho"}, "--------botの生存確認です。UTCで"+now.getHours()+"時をお知らせします。"
     )

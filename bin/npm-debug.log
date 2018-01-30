@@ -1,0 +1,206 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Nodist\\v-x64\\7.2.1\\node.exe',
+1 verbose cli   'C:\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'hubot',
+1 verbose cli   'coffee-script',
+1 verbose cli   'yo',
+1 verbose cli   'generator-hubot' ]
+2 info using npm@4.0.5
+3 info using node@v7.2.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData hubot
+8 silly fetchPackageMetaData coffee-script
+9 silly fetchPackageMetaData yo
+10 silly fetchPackageMetaData generator-hubot
+11 silly fetchOtherPackageData hubot
+12 silly cache add args [ 'hubot', null ]
+13 verbose cache add spec hubot
+14 silly fetchNamedPackageData coffee-script
+15 silly mapToRegistry name coffee-script
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry data Result {
+18 silly mapToRegistry   raw: 'coffee-script',
+18 silly mapToRegistry   scope: null,
+18 silly mapToRegistry   escapedName: 'coffee-script',
+18 silly mapToRegistry   name: 'coffee-script',
+18 silly mapToRegistry   rawSpec: '',
+18 silly mapToRegistry   spec: 'latest',
+18 silly mapToRegistry   type: 'tag' }
+19 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+20 silly fetchNamedPackageData yo
+21 silly mapToRegistry name yo
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry data Result {
+24 silly mapToRegistry   raw: 'yo',
+24 silly mapToRegistry   scope: null,
+24 silly mapToRegistry   escapedName: 'yo',
+24 silly mapToRegistry   name: 'yo',
+24 silly mapToRegistry   rawSpec: '',
+24 silly mapToRegistry   spec: 'latest',
+24 silly mapToRegistry   type: 'tag' }
+25 silly mapToRegistry uri https://registry.npmjs.org/yo
+26 silly fetchNamedPackageData generator-hubot
+27 silly mapToRegistry name generator-hubot
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'generator-hubot',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'generator-hubot',
+30 silly mapToRegistry   name: 'generator-hubot',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/generator-hubot
+32 silly cache add parsed spec Result {
+32 silly cache add   raw: 'hubot',
+32 silly cache add   scope: null,
+32 silly cache add   escapedName: 'hubot',
+32 silly cache add   name: null,
+32 silly cache add   rawSpec: 'hubot',
+32 silly cache add   spec: 'C:\\nodist\\meyasubakot\\bin\\hubot',
+32 silly cache add   type: 'local' }
+33 silly addLocalTarball shasum (computed) ae05d29bfdd0dfa9cd9cc2f82bd00e84cadb5c62
+34 verbose addTmpTarball C:\nodist\meyasubakot\bin\hubot not in flight; adding
+35 verbose correctMkdir C:\Users\akiko_kanzaki\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+36 verbose request uri https://registry.npmjs.org/coffee-script
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 11:39:12
+39 verbose request id 8835700d584f78f8
+40 verbose etag "5a51fba4-ef02"
+41 verbose lastModified Sun, 7 Jan 2018 10:51:16 GMT
+42 http request GET https://registry.npmjs.org/coffee-script
+43 verbose addTmpTarball validating metadata from C:\nodist\meyasubakot\bin\hubot
+44 verbose tar unpack C:\nodist\meyasubakot\bin\hubot
+45 verbose tar unpacking to C:\Users\AKIKO_~1\AppData\Local\Temp\npm-15296-264cc623\unpack-58340891
+46 silly gentlyRm C:\Users\AKIKO_~1\AppData\Local\Temp\npm-15296-264cc623\unpack-58340891 is being purged
+47 verbose gentlyRm don't care about contents; nuking C:\Users\AKIKO_~1\AppData\Local\Temp\npm-15296-264cc623\unpack-58340891
+48 verbose request uri https://registry.npmjs.org/generator-hubot
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 11:39:12
+51 verbose etag "59554656-5a32"
+52 verbose lastModified Thu, 29 Jun 2017 18:26:30 GMT
+53 http request GET https://registry.npmjs.org/generator-hubot
+54 verbose request uri https://registry.npmjs.org/yo
+55 verbose request no auth needed
+56 info attempt registry request try #1 at 11:39:12
+57 verbose etag "5a6ae4cd-131c0"
+58 verbose lastModified Fri, 26 Jan 2018 8:20:29 GMT
+59 http request GET https://registry.npmjs.org/yo
+60 silly gunzTarPerm modes [ '777', '666' ]
+61 error not a package C:\nodist\meyasubakot\bin\hubot
+62 error addLocal Could not install C:\nodist\meyasubakot\bin\hubot
+63 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open 'C:\Users\AKIKO_~1\AppData\Local\Temp\npm-15296-264cc623\unpack-58340891\package.json'
+63 silly fetchPackageMetaData  error for hubot { Error: ENOENT: no such file or directory, open 'C:\Users\AKIKO_~1\AppData\Local\Temp\npm-15296-264cc623\unpack-58340891\package.json'
+63 silly fetchPackageMetaData   errno: -4058,
+63 silly fetchPackageMetaData   code: 'ENOENT',
+63 silly fetchPackageMetaData   syscall: 'open',
+63 silly fetchPackageMetaData   path: 'C:\\Users\\AKIKO_~1\\AppData\\Local\\Temp\\npm-15296-264cc623\\unpack-58340891\\package.json' }
+64 http 304 https://registry.npmjs.org/yo
+65 verbose headers { date: 'Sun, 28 Jan 2018 02:39:12 GMT',
+65 verbose headers   via: '1.1 varnish',
+65 verbose headers   'cache-control': 'max-age=300',
+65 verbose headers   etag: '"5a6ae4cd-131c0"',
+65 verbose headers   age: '456',
+65 verbose headers   connection: 'keep-alive',
+65 verbose headers   'x-served-by': 'cache-itm18834-ITM',
+65 verbose headers   'x-cache': 'HIT',
+65 verbose headers   'x-cache-hits': '1',
+65 verbose headers   'x-timer': 'S1517107153.972356,VS0,VE1',
+65 verbose headers   vary: 'Accept-Encoding, Accept' }
+66 silly get cb [ 304,
+66 silly get   { date: 'Sun, 28 Jan 2018 02:39:12 GMT',
+66 silly get     via: '1.1 varnish',
+66 silly get     'cache-control': 'max-age=300',
+66 silly get     etag: '"5a6ae4cd-131c0"',
+66 silly get     age: '456',
+66 silly get     connection: 'keep-alive',
+66 silly get     'x-served-by': 'cache-itm18834-ITM',
+66 silly get     'x-cache': 'HIT',
+66 silly get     'x-cache-hits': '1',
+66 silly get     'x-timer': 'S1517107153.972356,VS0,VE1',
+66 silly get     vary: 'Accept-Encoding, Accept' } ]
+67 verbose etag https://registry.npmjs.org/yo from cache
+68 verbose get saving yo to C:\Users\akiko_kanzaki\AppData\Roaming\npm-cache\registry.npmjs.org\yo\.cache.json
+69 verbose correctMkdir C:\Users\akiko_kanzaki\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+70 http 304 https://registry.npmjs.org/generator-hubot
+71 verbose headers { date: 'Sun, 28 Jan 2018 02:39:12 GMT',
+71 verbose headers   via: '1.1 varnish',
+71 verbose headers   'cache-control': 'max-age=300',
+71 verbose headers   etag: '"59554656-5a32"',
+71 verbose headers   age: '686',
+71 verbose headers   connection: 'keep-alive',
+71 verbose headers   'x-served-by': 'cache-itm18834-ITM',
+71 verbose headers   'x-cache': 'HIT',
+71 verbose headers   'x-cache-hits': '1',
+71 verbose headers   'x-timer': 'S1517107153.976717,VS0,VE1',
+71 verbose headers   vary: 'Accept-Encoding, Accept' }
+72 silly get cb [ 304,
+72 silly get   { date: 'Sun, 28 Jan 2018 02:39:12 GMT',
+72 silly get     via: '1.1 varnish',
+72 silly get     'cache-control': 'max-age=300',
+72 silly get     etag: '"59554656-5a32"',
+72 silly get     age: '686',
+72 silly get     connection: 'keep-alive',
+72 silly get     'x-served-by': 'cache-itm18834-ITM',
+72 silly get     'x-cache': 'HIT',
+72 silly get     'x-cache-hits': '1',
+72 silly get     'x-timer': 'S1517107153.976717,VS0,VE1',
+72 silly get     vary: 'Accept-Encoding, Accept' } ]
+73 verbose etag https://registry.npmjs.org/generator-hubot from cache
+74 verbose get saving generator-hubot to C:\Users\akiko_kanzaki\AppData\Roaming\npm-cache\registry.npmjs.org\generator-hubot\.cache.json
+75 verbose correctMkdir C:\Users\akiko_kanzaki\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+76 http 304 https://registry.npmjs.org/coffee-script
+77 verbose headers { date: 'Sun, 28 Jan 2018 02:39:12 GMT',
+77 verbose headers   via: '1.1 varnish',
+77 verbose headers   'cache-control': 'max-age=300',
+77 verbose headers   etag: '"5a51fba4-ef02"',
+77 verbose headers   age: '11768',
+77 verbose headers   connection: 'keep-alive',
+77 verbose headers   'x-served-by': 'cache-itm18829-ITM',
+77 verbose headers   'x-cache': 'HIT',
+77 verbose headers   'x-cache-hits': '3',
+77 verbose headers   'x-timer': 'S1517107153.983288,VS0,VE0',
+77 verbose headers   vary: 'Accept-Encoding, Accept' }
+78 silly get cb [ 304,
+78 silly get   { date: 'Sun, 28 Jan 2018 02:39:12 GMT',
+78 silly get     via: '1.1 varnish',
+78 silly get     'cache-control': 'max-age=300',
+78 silly get     etag: '"5a51fba4-ef02"',
+78 silly get     age: '11768',
+78 silly get     connection: 'keep-alive',
+78 silly get     'x-served-by': 'cache-itm18829-ITM',
+78 silly get     'x-cache': 'HIT',
+78 silly get     'x-cache-hits': '3',
+78 silly get     'x-timer': 'S1517107153.983288,VS0,VE0',
+78 silly get     vary: 'Accept-Encoding, Accept' } ]
+79 verbose etag https://registry.npmjs.org/coffee-script from cache
+80 verbose get saving coffee-script to C:\Users\akiko_kanzaki\AppData\Roaming\npm-cache\registry.npmjs.org\coffee-script\.cache.json
+81 verbose correctMkdir C:\Users\akiko_kanzaki\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+82 silly rollbackFailedOptional Starting
+83 verbose stack TypeError: Cannot read property 'path' of null
+83 verbose stack     at Installer.rollbackFailedOptional (C:\Nodist\npmv\4.0.5\lib\install.js:505:29)
+83 verbose stack     at Array.<anonymous> (C:\Nodist\npmv\4.0.5\node_modules\slide\lib\bind-actor.js:15:8)
+83 verbose stack     at LOOP (C:\Nodist\npmv\4.0.5\node_modules\slide\lib\chain.js:15:14)
+83 verbose stack     at C:\Nodist\npmv\4.0.5\node_modules\slide\lib\chain.js:18:7
+83 verbose stack     at C:\Nodist\npmv\4.0.5\lib\install.js:331:5
+83 verbose stack     at Array.<anonymous> (C:\Nodist\npmv\4.0.5\node_modules\slide\lib\bind-actor.js:15:8)
+83 verbose stack     at LOOP (C:\Nodist\npmv\4.0.5\node_modules\slide\lib\chain.js:15:14)
+83 verbose stack     at chain (C:\Nodist\npmv\4.0.5\node_modules\slide\lib\chain.js:20:5)
+83 verbose stack     at C:\Nodist\npmv\4.0.5\lib\install.js:288:5
+83 verbose stack     at C:\Nodist\npmv\4.0.5\node_modules\slide\lib\chain.js:16:22
+84 verbose cwd C:\nodist\meyasubakot\bin
+85 error Windows_NT 10.0.14393
+86 error argv "C:\\Nodist\\v-x64\\7.2.1\\node.exe" "C:\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js" "install" "-g" "hubot" "coffee-script" "yo" "generator-hubot"
+87 error node v7.2.1
+88 error npm  v4.0.5
+89 error Cannot read property 'path' of null
+90 error If you need help, you may report this error at:
+90 error     <https://github.com/npm/npm/issues>
+91 verbose exit [ 1, true ]
