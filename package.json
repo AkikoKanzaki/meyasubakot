@@ -7,9 +7,11 @@
   },
   "dependencies": {
     "yo": "2.0.1",
+    "chai": "^3.5.0",
     "generator-hubot": "1.0.0",
+    "coffee-coverage": "^2.0.0",
     "coffee-script": "^1.12.7",
-    "cron": "^1.0.5",
+    "cron": "^1.1.0",
     "hubot": "2.19.0",
     "hubot-diagnostics": "0.0.2",
     "hubot-google-images": "^0.2.7",
@@ -28,7 +30,8 @@
     "time": "^0.11.0"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">= 8.11.1",
+    "npm": ">= 5.6.0"
   },
   "private": true
 }
