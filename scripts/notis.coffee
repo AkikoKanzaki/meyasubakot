@@ -1,3 +1,4 @@
+# 2018/04/16 time関数がおかしくなっちゃった？うまく動かないので時間をしゃべらせるのをやめました
 # cronJob = require('cron').CronJob
 # time = require('time')
 #
